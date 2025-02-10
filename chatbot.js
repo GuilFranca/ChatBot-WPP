@@ -44,12 +44,7 @@ client.on('message', async msg => {
         await delay(3000); //delay de 3 segundos
         await chat.sendStateTyping(); //Simulando Digitação
         await delay(3000);
-        await client.sendMessage(msg.from, 'Confira nossos produtos na nossa vitrine online: https://www.solucaobalancas.com.br\nCaso não encontre o produto que queira comprar entre em contato com este número para confirmar: +55 61 9589-9265');
-
-        await delay(3000); //delay de 3 segundos
-        await chat.sendStateTyping(); // Simulando Digitação
-        await delay(3000);
-        await client.sendMessage(msg.from, 'Link para vitrine online: https://www.solucaobalancas.com.br');
+        await client.sendMessage(msg.from, 'Confira nossos produtos na nossa vitrine online: \nhttps://www.solucaobalancas.com.br\n\nCaso não encontre o produto que queira comprar, entre em contato com este número para confirmar: \n+55 61 9589-9265');
     }
 
     if (msg.body !== null && msg.body === '2' && msg.from.endsWith('@c.us')) {
@@ -59,12 +54,12 @@ client.on('message', async msg => {
         await delay(3000); //Delay de 3000 milisegundos mais conhecido como 3 segundos
         await chat.sendStateTyping(); // Simulando Digitação
         await delay(3000);
-        await client.sendMessage(msg.from, 'Consertamos: \n-Balanças \n-Embaladoras \n-Fatiadores \n-liquidificares \n-Moedores \n-Processadores \n-Raladores \n-Seladooras \n-Serras fitas\nAssitência técnica autorizada: \n-Arbel \n-Elgin \n-Gural \n-Skymsen \n-Toledo \n-Urano \n-Welmy');
+        await client.sendMessage(msg.from, 'Consertamos: \n-Balanças \n-Embaladoras \n-Fatiadores \n-liquidificares \n-Moedores \n-Processadores \n-Raladores \n-Seladooras \n-Serras fitas\n\nAssitência técnica autorizada: \n-Arbel \n-Elgin \n-Gural \n-Skymsen \n-Toledo \n-Urano \n-Welmy');
 
         await delay(3000); //delay de 3 segundos
         await chat.sendStateTyping(); // Simulando Digitação
         await delay(3000);
-        await client.sendMessage(msg.from, 'Link para vitrine online: https://www.solucaobalancas.com.br');
+        await client.sendMessage(msg.from, 'Link para vitrine online: \nhttps://www.solucaobalancas.com.br');
     }
 
     if (msg.body !== null && msg.body === '3' && msg.from.endsWith('@c.us')) {
@@ -79,7 +74,7 @@ client.on('message', async msg => {
         await delay(3000); //delay de 3 segundos
         await chat.sendStateTyping(); // Simulando Digitação
         await delay(3000);
-        await client.sendMessage(msg.from, 'Link para vitrine online: https://www.solucaobalancas.com.br');
+        await client.sendMessage(msg.from, 'Link para vitrine online: \nhttps://www.solucaobalancas.com.br');
 
     }
 
